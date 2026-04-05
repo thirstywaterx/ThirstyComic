@@ -1,0 +1,146 @@
+{
+  "ui": {
+    "nav": {
+      "console": "控制台",
+      "documents": "文档",
+      "menu": "菜单",
+      "menuContent": {
+        "projects": "项目",
+        "settings": "设置"
+      },
+      "breadcrumbs": {
+        "console": "控制台",
+        "projects": "项目",
+        "create": "创建",
+        "edit": "修改",
+        "upload": "上传",
+        "resources": "资源",
+        "generate": "生成"
+      },
+      "chapter": "章节",
+      "project": {
+        "sidebar": {
+          "generate": "生成",
+          "resources": "资源"
+        }
+      }
+    },
+    "buttons": {
+      "createProject": "创建",
+      "cancel": "取消",
+      "confirm": "确认",
+      "save": "保存修改",
+      "upload": "上传",
+      "delete": "删除",
+      "edit": "编辑"
+    },
+    "messages": {
+      "emptyProject": "未找到项目，请立即创建一个。",
+      "projectCreated": "项目创建成功！",
+      "notice": "注意",
+      "deleteChapter": "您确定要删除此章节吗？",
+      "deleteChapterLimit": "必须保留至少一个章节。",
+      "addChapter": "添加章节",
+      "addChapterDes": "请输入新章节的名称。",
+      "addShot": "添加镜头",
+      "addShotDes": "请输入新镜头的名称。",
+      "deleteConfirmText": "确定要删除此项目吗？",
+      "projectUpdated": "项目修改成功！",
+      "deleteResourceConfirm": "确定删除资源“{name}”吗？",
+      "deleteSuccess": "删除成功",
+      "deleteFail": "删除失败",
+      "uploadSuccess": "上传成功",
+      "uploadFail": "上传失败",
+      "updateSuccess": "修改成功",
+      "updateFail": "修改失败",
+      "needImage": "至少需要上传一张图片",
+      "nameRequired": "名称不能为空",
+      "reserveOne": "至少保留一个上传项",
+      "resourceNotFound": "未找到要修改的资源",
+      "missingResourceInfo": "缺少资源信息，无法修改",
+      "selectShotFirst": "请先选择一个分镜",
+      "noShotsToDownload": "当前章节没有分镜可下载",
+      "noImagesSelected": "没有分镜选中图片，无法下载",
+      "downloadPartial": "已下载 {downloaded} 张，另有 {missing} 个分镜未选中图片",
+      "downloadFull": "已下载 {downloaded} 张分镜图片",
+      "downloadFailed": "下载失败，请稍后重试",
+      "shotNoImageSelected": "该分镜未选中图片，无法下载",
+      "downloadShotFull": "已下载当前分镜选中图片",
+      "fetchShotsFailed": "获取分镜列表失败",
+      "addShotSuccess": "添加分镜成功",
+      "addShotFailed": "添加分镜失败",
+      "shotNameEmpty": "分镜名称不能为空",
+      "shotNotFound": "分镜不存在",
+      "renameSuccess": "重命名成功",
+      "renameFailed": "重命名失败",
+      "deleteFailed": "删除失败",
+      "saveSortFailed": "保存排序失败，已恢复列表",
+      "batchDeleteSuccess": "批量删除成功",
+      "batchDeleteFailed": "批量删除失败",
+      "prevImageNotSelected": "上一张分镜未选中图片，无法继承上下文",
+      "fetchPrevImageFailed": "获取上一张分镜图片失败",
+      "deleteConfirmTitle": "删除项目"
+    },
+    "labels": {
+      "projectName": "项目名称",
+      "projectDescription": "项目描述",
+      "deleteConfirmTitle": "删除确认",
+      "theme": "主题",
+      "chapterName": "章节名称",
+      "shotName": "镜头名称",
+      "resourceName": "名称",
+      "resourceDes": "提供给 AI 关于此项的描述",
+      "searchKeyword": "搜索关键字",
+      "inheritContext": "继承上下文"
+    },
+    "placeholders": {
+      "search": "搜索关键字"
+    },
+    "tabItems": {
+      "settings": {
+        "general": "常规"
+      }
+    },
+    "settings": {
+      "adjustable": {
+        "theme": "主题",
+        "language": "语言",
+        "baseURL": "Base URL",
+        "apikey": "API Key"
+      },
+      "options": {
+        "themeSections": {
+          "light": "浅色",
+          "dark": "深色"
+        },
+        "languageSections": {
+          "en": "English",
+          "zh": "中文"
+        }
+      }
+    },
+    "project": {
+      "storyboard": {
+        "rename": "重命名",
+        "delete": "删除"
+      }
+    },
+    "error": {
+      "requestError": {
+        "ERR_PROJECT_001": "项目名称不能为空。",
+        "ERR_PROJECT_002": "项目名称已存在。",
+        "ERR_PROJECT_003": "项目描述不能为空。",
+        "ERR_CHAPTER_001": "章节名称不能为空。",
+        "ERR_CHAPTER_002": "未找到相关项目。",
+        "ERR_CHAPTER_003": "已存在相同名称的章节。",
+        "ERR_CHAPTER_004": "未找到相关章节。",
+        "ERR_CHAPTER_005": "服务器内部错误，请稍后重试。",
+        "fetchFailed": "无法获取数据，请稍后重试。",
+        "UNKNOWN_ERROR": "发生未知错误。"
+      },
+      "deleteFailed": "删除失败。",
+      "updateFailed": "修改失败。",
+      "projectInfoRequired": "项目名称或描述不能为空。"
+    }
+  }
+}

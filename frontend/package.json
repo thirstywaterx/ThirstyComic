@@ -1,0 +1,29 @@
+{
+  "name": "autocomic",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "^10.2.3",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
+    "@pinia/nuxt": "^0.11.3",
+    "@vueuse/nuxt": "^14.2.1",
+    "lodash-es": "^4.17.23",
+    "mitt": "^3.0.1",
+    "nuxt": "^4.3.1",
+    "pinia": "^3.0.4",
+    "sober": "^1.1.9",
+    "vue": "^3.5.28",
+    "vue-router": "^4.6.4",
+    "vuedraggable": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12"
+  }
+}

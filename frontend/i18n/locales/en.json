@@ -1,0 +1,147 @@
+{
+  "ui": {
+    "nav": {
+      "console": "Console",
+      "documents": "Documents",
+      "menu": "Menu",
+      "menuContent": {
+        "projects": "Projects",
+        "settings": "Settings"
+      },
+      "breadcrumbs": {
+        "console": "Console",
+        "projects": "Projects",
+        "create": "Create",
+        "edit": "Edit",
+        "upload": "Upload",
+        "resources": "Resources",
+        "generate": "Generate"
+      },
+      "chapter": "Chapter",
+      "project": {
+        "sidebar": {
+          "generate": "Generate",
+          "resources": "Resources"
+        }
+      }
+    },
+    "buttons": {
+      "createProject": "Create",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "save": "Save",
+      "upload": "Upload",
+      "delete": "Delete",
+      "edit": "Edit"
+    },
+    "messages": {
+      "emptyProject": "No project found, create one now. ",
+      "projectCreated": "Project created successfully!",
+      "notice": "Notice",
+      "deleteChapter": "Are you sure you want to delete this chapter?",
+      "deleteChapterLimit": "At least one chapter must be retained.",
+      "addChapter": "Add Chapter",
+      "addChapterDes": "Please enter the name of the new chapter.",
+      "addShot": "Add Shot",
+      "addShotDes": "Please enter the name of the new shot.",
+      "deleteConfirmText": "Are you sure you want to delete this project?",
+      "projectUpdated": "Project updated successfully!",
+      "deleteResourceConfirm": "Are you sure you want to delete this resource?",
+      "deleteSuccess": "Delete successful",
+      "deleteFail": "Delete failed",
+      "uploadSuccess": "Uploaded successfully",
+      "uploadFail": "Upload failed",
+      "updateSuccess": "Updated successfully",
+      "updateFail": "Update failed",
+      "needImage": "At least one image is required",
+      "nameRequired": "Name is required",
+      "reserveOne": "At least one upload item must be retained",
+      "resourceNotFound": "Target resource not found",
+      "missingResourceInfo": "Missing resource info, unable to update",
+      "selectShotFirst": "Please select a shot first",
+      "noShotsToDownload": "No shots to download in current chapter",
+      "noImagesSelected": "No images selected for shots, cannot download",
+      "downloadPartial": "Downloaded {downloaded} images, {missing} shots remain without selected images",
+      "downloadFull": "Downloaded {downloaded} shot images",
+      "downloadFailed": "Download failed, please try again later",
+      "shotNoImageSelected": "No image selected for this shot, cannot download",
+      "downloadShotFull": "Downloaded selected image for current shot",
+      "fetchShotsFailed": "Failed to fetch shots list",
+      "addShotSuccess": "Successfully added shot",
+      "addShotFailed": "Failed to add shot",
+      "shotNameEmpty": "Shot name cannot be empty",
+      "shotNotFound": "Shot does not exist",
+      "renameSuccess": "Rename successful",
+      "renameFailed": "Rename failed",
+      "deleteFailed": "Delete failed",
+      "saveSortFailed": "Failed to save sorting, list restored",
+      "batchDeleteSuccess": "Batch delete successful",
+      "batchDeleteFailed": "Batch delete failed",
+      "prevImageNotSelected": "No image selected in previous shot, cannot inherit context",
+      "fetchPrevImageFailed": "Failed to fetch previous shot image",
+      "deleteConfirmTitle": "Delete Project"
+    },
+    "labels": {
+      "projectName": "Project Name",
+      "projectDescription": "Project Description",
+      "deleteConfirmTitle": "Delete Confirm",
+      "theme": "Theme",
+      "chapterName": "Chapter Name",
+      "shotName": "Shot Name",
+      "resourceName": "Name",
+      "resourceDes": "Description for AI about this resource",
+      "searchKeyword": "Search Keyword",
+      "inheritContext": "Inherit Context"
+    },
+    "placeholders": {
+      "search": "Search Keyword"
+    },
+    "tabItems": {
+      "settings": {
+        "general": "General"
+      }
+    },
+    "settings": {
+      "adjustable": {
+        "theme": "Theme",
+        "language": "Language",
+        "baseURL": "Base URL",
+        "apikey": "API Key",
+        "modelId": "Model ID"
+      },
+      "options": {
+        "themeSections": {
+          "light": "Light",
+          "dark": "Dark"
+        },
+        "languageSections": {
+          "en": "English",
+          "zh": "中文"
+        }
+      }
+    },
+    "project": {
+      "storyboard": {
+        "rename": "Rename",
+        "delete": "Delete"
+      }
+    },
+    "error": {
+      "requestError": {
+        "ERR_PROJECT_001": "Project name is required.",
+        "ERR_PROJECT_002": "Project name already exists.",
+        "ERR_PROJECT_003": "Project description is required.",
+        "ERR_CHAPTER_001": "Chapter name cannot be empty",
+        "ERR_CHAPTER_002": "Project not found",
+        "ERR_CHAPTER_003": "A chapter with the same name already exists",
+        "ERR_CHAPTER_004": "Chapter not found",
+        "ERR_CHAPTER_005": "Internal server error, please try again later",
+        "fetchFailed": "Failed to fetch data, please try again later.",
+        "UNKNOWN_ERROR": "An unknown error occurred"
+      },
+      "deleteFailed": "Delete failed.",
+      "updateFailed": "Update failed.",
+      "projectInfoRequired": "Project name or description are required."
+    }
+  }
+}
