@@ -1,0 +1,27 @@
+services:
+  autocomic:
+    build: .
+    container_name: thirstycomic
+    ports:
+      - "18080:3000"
+    env_file:
+      - .env.backend
+    depends_on:
+      - mongo
+    volumes:
+      - ./backend/temp:/app/temp
+      - ./backend/public/uploads:/app/public/uploads
+      - ./backend/public/outputs:/app/public/outputs
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:latest
+    container_name: autocomic-mongo
+    ports:
+      - "18082:27017" # Changed from 27017 to 18082 to avoid conflicts with local MongoDB
+    volumes:
+      - mongo_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongo_data:

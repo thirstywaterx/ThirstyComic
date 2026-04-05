@@ -7,3 +7,5 @@ frontend/node_modules/
 frontend/.nuxt/
 frontend/.output/
 frontend/dist/
+
+.env.backend

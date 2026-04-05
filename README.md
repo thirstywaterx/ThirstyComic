@@ -1,0 +1,70 @@
+# THIRSTYCOMIC
+
+<p align="center">
+<img src="https://img.shields.io/badge/build-passing-green">
+<img src="https://img.shields.io/badge/NodeJS-v24.11.0-green">
+<img src="https://img.shields.io/badge/Nuxt.js-v3.33.1-lightgreen">
+<img src="https://img.shields.io/badge/MongoDB-v8.2.3-lightgreen">
+</p>
+
+<br>
+
+<p align="center">
+<img src="/THIRSTYLE.svg" alt="THIRSTLE" width="300">
+</p>
+
+<p align="center">
+<img src="/ThirstyComic.svg" alt="ThirstyComic" width="200">
+</p>
+
+## 项目介绍
+通过单独控制每个分镜，继承上一个分镜的生成结果，插入带有单独描述的参考图，来精确控制漫画的生成效果
+<img src="/UIView.png">
+<p align="center">
+<img src="/ComicExample.png" width="500">
+</p>
+
+## 部署
+
+### Docker Compose
+
+   **`docker-compose.yml`**
+   ```yaml
+   services:
+     autocomic:
+       image: thirstywater/thirstycomic:latest
+       container_name: thirstycomic
+       ports:
+         - "18080:3000"
+       env_file:
+         - .env.backend
+       depends_on:
+         - mongo
+       restart: unless-stopped
+
+     mongo:
+       image: mongo:latest
+       container_name: autocomic-mongo
+       volumes:
+         - mongo_data:/data/db
+       restart: unless-stopped
+
+   volumes:
+     mongo_data:
+   ```
+
+   **`.env.backend` (环境变量)**
+   ```ini
+   NODE_ENV=production
+   PORT=3000
+   MONGO_URI=mongodb://mongo:27017/autocomic
+   ```
+
+   ```bash
+   docker compose up -d
+   ```
+
+   启动成功后，在浏览器中访问：[http://localhost:18080](http://localhost:18080)
+
+
+

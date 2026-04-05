@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const backendUrl = process.env.BACKEND_URL || 'http://localhost:3000';
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -37,6 +39,9 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { redirect: '/console/projects' },
     '/console': { redirect: '/console/projects' },
+    '/api/**': { proxy: `${backendUrl}/api/**` },
+    '/uploads/**': { proxy: `${backendUrl}/uploads/**` },
+    '/outputs/**': { proxy: `${backendUrl}/outputs/**` }
   },
   ssr: false
 })
