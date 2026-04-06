@@ -17,22 +17,22 @@
 <img src="/ThirstyComic.svg" alt="ThirstyComic" width="200">
 </p>
 
-## 项目介绍
+## About the Project
 
-本地Web应用，通过单独控制每个分镜，继承上一个分镜的生成结果，插入带有单独描述的参考图，来精确控制漫画的生成效果。该项目还处于早期开发阶段，可能还存在功能不完善，BUG 多等问题
+A local web application that precisely controls the comic generation process by individually managing each panel, inheriting the generation results from the previous panel, and inserting reference images with independent descriptions. This project is currently in its early development stage, so there may still be incomplete features and bugs.
 
-### 未来计划
+### Future Plans
 
-* AI 自动排版
-* 集成手动排版工具
-* 分层生成背景，人物与气泡
+* AI auto-layout (typesetting)
+* Integration of manual layout tools
+* Layered generation of backgrounds, characters, and speech bubbles
 
 <img src="/UIView.png">
 <p align="center">
 <img src="/ComicExample.png" width="500">
 </p>
 
-## 部署
+## Deployment
 
 ### Docker Compose
 
@@ -61,7 +61,7 @@
      mongo_data:
    ```
 
-   **`.env.backend` (环境变量)**
+   **`.env.backend` (Environment Variables)**
    ```ini
    NODE_ENV=production
    PORT=3000
@@ -72,14 +72,11 @@
    docker compose up -d
    ```
 
-   启动成功后，在浏览器中访问：[http://localhost:18080](http://localhost:18080)
+   After a successful startup, visit the application in your browser at: [http://localhost:18080](http://localhost:18080)
 
-## 配置
-进入应用后，可以在侧栏进入 Setting 设置 BaseURL，APIKey 模型ID 等信息，目前版本仅适配了 Gemini API。您可以前往 [https://aistudio.google.com/api-keys](https://aistudio.google.com/api-keys) 获取。
+## Configuration
+After entering the application, you can go to the Settings in the sidebar to configure the BaseURL, API Key, Model ID, and other information. The current version only supports the Gemini API. You can obtain your API key at [https://aistudio.google.com/api-keys](https://aistudio.google.com/api-keys).
 
-## 使用
+## Usage
 
-创建项目后，提供了三栏式的一个工作区。可以管理分镜，在中间的资源区上传人物，背景等。资源可以在单独的选项卡上传，你可以给每个图片都添加一份单独的介绍，用于描述角色的名字与简要特征，这些都会提供给AI作为参考。一个分镜可以多次尝试生成多个结果，你可以选择其中一个作为既定结果，也可以将选中项作为上下文传递到下一个分镜的生成当中。
-
-
-
+After creating a project, you are provided with a three-column workspace. You can manage the panels and upload characters, backgrounds, and other assets in the central resource area. Resources can be uploaded in separate tabs, and you can add an individual introduction to each image, describing the character's name and brief traits. All of this will be provided to the AI as reference material. You can attempt to generate multiple results for a single panel, choose one as your established result, and pass the selected item as context into the generation of the next panel.
